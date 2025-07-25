@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Coffee Shop</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93'); /* Background image URL */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #fff8f0;
+    }
+    header {
+      background-color: rgba(111, 78, 55, 0.9);
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+    nav {
+      background-color: rgba(169, 116, 99, 0.9);
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px;
+      background-color: rgba(0, 0, 0, 0.5); /* translucent dark background */
+      margin: 20px;
+      border-radius: 10px;
+    }
+    .menu ul {
+      list-style: none;
+      padding: 0;
+    }
+    .menu li {
+      margin: 10px 0;
+    }
+    footer {
+      background-color: rgba(111, 78, 55, 0.9);
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+    .contact-form button {
+      padding: 10px 20px;
+      background-color: #a97463;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to  Coffee Shop</h1>
+    <p>Your perfect blend, every time!</p>
+  </header>
+
+  <nav>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section id="menu" class="menu">
+    <h2>Our Menu</h2>
+    <ul>
+      <li>Espresso - ₹120</li>
+      <li>Cappuccino - ₹150</li>
+      <li>Latte - ₹160</li>
+      <li>Mocha - ₹170</li>
+      <li>Cold Brew - ₹180</li>
+    </ul>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p> Coffee Shop is a cozy place in town where coffee meets comfort. We believe in freshly brewed beans, warm smiles, and cozy corners to relax or work. Drop by and enjoy the aroma!</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <label for="name">Your Name:</label><br>
+      <input type="text" id="name" name="name" required><br>
+
+      <label for="email">Your Email:</label><br>
+      <input type="email" id="email" name="email" required><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="5" required></textarea><br>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Coffee Shop. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
